@@ -1,0 +1,51 @@
+.events-container {
+  background-color: var(--dark-text-color);
+  position: relative;
+}
+
+.events {
+  padding: 207px 0;
+  position: relative;
+  height: 1624px;
+
+  &__list {
+    position: relative;
+    z-index: 2;
+  }
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  &::before {
+    top: 0;
+    height: 771px;
+    background-image: url("/images/events/background1.png"),
+      linear-gradient(0deg, #010a20 0%, rgba(1, 10, 32, 0) 100%);
+    background-blend-mode: overlay;
+  }
+
+  &::after {
+    bottom: 0;
+    height: 871px;
+    background-image: url("/images/events/background2.png"),
+      linear-gradient(180deg, #010a20 0%, rgba(1, 10, 32, 0) 100%);
+    background-blend-mode: overlay;
+  }
+}
+
+.events__list {
+  display: flex;
+  flex-direction: column;
+  gap: 190px;
+
+  li:nth-child(2) .event-item {
+    flex-direction: row-reverse;
+  }
+}
