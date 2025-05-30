@@ -1,0 +1,75 @@
+.flight-info-container {
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.journey-info-container {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  margin-top: 60px;
+  gap: 30px;
+}
+
+.travel-image-card-content {
+  width: 200px;
+  height: 133px;
+  border-radius: 7px;
+  object-fit: cover;
+}
+
+.journey-description-container {
+  flex: 1;
+}
+
+.flight-heading {
+  padding: 0;
+  margin: 0;
+  font: 700 24px "DM Sans", sans-serif;
+  color: #010a20;
+}
+
+.adventure-text-style {
+  padding: 0;
+  margin: 12px 0 0 0;
+  font: 400 20px/32px "DM Sans", sans-serif;
+  color: rgba(21, 20, 57, 0.4);
+}
+
+@media (max-width: 768px) {
+  .journey-info-container {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .travel-image-card-content {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    aspect-ratio: 3/2;
+  }
+
+  .journey-description-container {
+    width: 100%;
+  }
+
+  .flight-heading {
+    font-size: 22px;
+  }
+
+  .adventure-text-style {
+    font-size: 18px;
+    line-height: 28px;
+  }
+}
+
+@media (max-width: 480px) {
+  .flight-heading {
+    font-size: 20px;
+  }
+
+  .adventure-text-style {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}

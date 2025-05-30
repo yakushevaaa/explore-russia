@@ -1,0 +1,47 @@
+.trip-planner-container {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  padding: 20px;
+  background: #dce8f2;
+}
+
+.trip-planning-guide {
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 1200px;
+  padding: 60px 0;
+}
+
+.main-heading-text-style {
+  padding: 0;
+  margin: 0 0 40px 0;
+  font: 700 60px "DM Sans", sans-serif;
+  color: #010a20;
+  text-align: left;
+}
+
+@media (max-width: 1024px) {
+  .main-heading-text-style {
+    font-size: 48px;
+  }
+}
+
+@media (max-width: 768px) {
+  .main-heading-text-style {
+    font-size: 36px;
+  }
+
+  .trip-planning-guide {
+    padding: 40px 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .main-heading-text-style {
+    font-size: 28px;
+  }
+}
