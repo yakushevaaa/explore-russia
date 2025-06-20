@@ -1,0 +1,27 @@
+@import "@/styles/variables";
+
+.main-button {
+  display: inline-block;
+  padding: 20px 20px;
+  font-size: 18px;
+  color: $white;
+  background-color: $primary-color;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  
+  &:hover {
+    background-color: darken($primary-color, 10%);
+    transform: translateY(-2px);
+  }
+  
+  &:active {
+    transform: translateY(1px);
+  }
+
+  @media (max-width: 768px) {
+    padding: 15px 40px;
+    font-size: 25px;
+  }
+}
