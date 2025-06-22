@@ -1,0 +1,7 @@
+@media (max-width: 375px) {
+  .events__list {
+    li:nth-child(2) .event-item {
+      flex-direction: column;
+    }
+  }
+}

@@ -1,0 +1,70 @@
+.trip-planner-container {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  padding: 20px;
+  background: #dce8f2;
+}
+
+.trip-planning-guide {
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 1200px;
+  padding: 60px 0;
+}
+
+.main-heading-text-style {
+  padding: 0;
+  margin: 0 0 40px 0;
+  font: 700 60px "DM Sans", sans-serif;
+  color: #010a20;
+  text-align: left;
+}
+
+@media (max-width: 1024px) {
+  .main-heading-text-style {
+    font-size: 48px;
+  }
+}
+
+@media (max-width: 768px) {
+  .main-heading-text-style {
+    font-size: 36px;
+  }
+
+  .trip-planning-guide {
+    padding: 40px 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .main-heading-text-style {
+    font-size: 28px;
+  }
+}
+
+.book-tour-button {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 12px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 2rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+}
+
+.book-tour-button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(102, 126, 234, 0.6);
+}
+
+.book-tour-button:active {
+  transform: translateY(-1px);
+}

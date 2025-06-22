@@ -1,0 +1,40 @@
+.flight-info-container {
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.flight-heading {
+  padding: 0;
+  font: 700 24px "DM Sans", sans-serif;
+  color: #010a20;
+  margin-left: 25px;
+}
+
+.flight-info-text-style {
+  padding: 0;
+  margin: 20px 0 0 0;
+  font: 400 20px/32px "DM Sans", sans-serif;
+  color: rgba(21, 20, 57, 0.4);
+}
+
+@media (max-width: 768px) {
+  .flight-heading {
+    font-size: 22px;
+  }
+
+  .flight-info-text-style {
+    font-size: 18px;
+    line-height: 28px;
+  }
+}
+
+@media (max-width: 480px) {
+  .flight-heading {
+    font-size: 20px;
+  }
+
+  .flight-info-text-style {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}

@@ -5,6 +5,16 @@ namespace ExploreRussiaApi
         public static void Main(string[] args)
         {
             var builder = WebApplication.CreateBuilder(args);
+            
+            builder.Services.AddCors(options =>
+            {
+                options.AddPolicy("AllowAll", policy =>
+                {
+                    policy.AllowAnyOrigin()
+                        .AllowAnyMethod()
+                        .AllowAnyHeader();
+                });
+            });
 
             // Add services to the container.
             builder.Services.AddAuthorization();
@@ -14,6 +24,8 @@ namespace ExploreRussiaApi
             builder.Services.AddSwaggerGen();
 
             var app = builder.Build();
+            
+            app.UseCors("AllowAll");
 
             // Configure the HTTP request pipeline.
             if (app.Environment.IsDevelopment())
@@ -31,6 +43,7 @@ namespace ExploreRussiaApi
                     Description = "Глубочайшее озеро мира с кристально чистой водой," +
                                   " окружённое тайгой и горами. Отправьтесь в путешествие по Байкалу " +
                                   "— катайтесь на льдинах зимой, исследуйте заповедные тропы летом.",
+                    ImageUrl = "/images/events/event1.png"
                 },
                 new Event
                 {
@@ -39,6 +52,7 @@ namespace ExploreRussiaApi
                     Description = "Современный мегаполис с многовековой историей. " +
                                   "Прогуляйтесь по Красной площади, поднимитесь на смотровую площадку Москва-Сити" +
                                   " и посетите лучшие театры.",
+                    ImageUrl = "/images/events/event2.png"
                 },
                 new Event
                 {
@@ -47,6 +61,7 @@ namespace ExploreRussiaApi
                     Description =
                         "Императорский город на Неве с великолепной архитектурой и богатой культурной жизнью. " +
                         "Посетите Эрмитаж, прогуляйтесь по Невскому проспекту и насладитесь белыми ночами летом.",
+                    ImageUrl = "/images/events/event2.png"
                 }
             });
 
@@ -62,5 +77,7 @@ namespace ExploreRussiaApi
         public int Id { get; set; }
         public string Name { get; set; } = string.Empty;
         public string Description { get; set; } = string.Empty;
+        
+        public string ImageUrl { get; set; } = string.Empty;
     }
 }

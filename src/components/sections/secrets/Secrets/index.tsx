@@ -11,11 +11,11 @@ import Prev from "../../../../assets/image/icon/previous.svg";
 
 export default function SecretsSection() {
     const images = [
-        {src: Secret1, alt: "Moscow"},
-        {src: Secret2, alt: "Cathedral"},
-        {src: Secret3, alt: "Everest"},
-        {src: Secret4, alt: "Altai"},
-        {src: Secret5, alt: "Kremlin"}
+        {src: Secret1, alt: "Moscow", title: "Москва-Сити"},
+        {src: Secret2, alt: "Cathedral", title: "Исаакиевский собор"},
+        {src: Secret3, alt: "Everest", title: "Эверест"},
+        {src: Secret4, alt: "Altai", title: "Алтайские горы"},
+        {src: Secret5, alt: "Kremlin", title: "Московский Кремль"}
     ];
 
     const [currentIndex, setCurrentIndex] = useState(0);
@@ -66,6 +66,9 @@ export default function SecretsSection() {
                             {getVisibleImages().map((img, index) => (
                                 <div key={`${img.alt}-${index}`} className="image-container">
                                     <img src={img.src} alt={img.alt} className="secret-image" />
+                                    <div className="image-caption">
+                                        {img.title}
+                                    </div>
                                 </div>
                             ))}
                         </div>
