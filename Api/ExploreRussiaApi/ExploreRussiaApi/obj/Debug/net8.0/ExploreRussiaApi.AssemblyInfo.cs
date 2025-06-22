@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ExploreRussiaApi")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+bcac144586fa8c9c1ecd448635800de2437d1d9f")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2177cbcc6b1bab92f1ef25573b8dcd6bc4cc405c")]
 [assembly: System.Reflection.AssemblyProductAttribute("ExploreRussiaApi")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ExploreRussiaApi")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
