@@ -1,10 +1,9 @@
-import React from 'react';
 import './MainButton.scss';
 
-const MainButton = () => {
+const MainButton = ({text}: {text:string}) => {
   return (
     <button className="main-button">
-      Начать путешествие
+        {text}
     </button>
   );
 };

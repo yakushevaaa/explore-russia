@@ -58,12 +58,12 @@
   justify-content: center;
   width: 40px;
   height: 40px;
-  background: url("/assets/image_b56e7f37.png") center/contain no-repeat;
-  color: white;
+  background: url("../../../../assets/image/img/image_b56e7f37.png") center/contain no-repeat;
   font: 500 20px "DM Sans", sans-serif;
   flex-shrink: 0;
   position: absolute;
   left: -10px;
+  color: white;
 }
 
 .section-with-number:not(:last-child)::after {

@@ -1,5 +1,4 @@
-import "./style.css";
-
+import "./style.css"
 function FlightBookingSection() {
     return (
         <div className="flight-info-container">

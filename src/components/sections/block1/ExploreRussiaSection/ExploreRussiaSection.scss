@@ -1,13 +1,13 @@
-@import "@/styles/variables";
+@use "@/styles/variables" as v;
 
 .explore-russia {
   padding: 100px 0;
-  background: $background-image center/cover no-repeat;
+  background: v.$background-image center/cover no-repeat;
   position: relative;
   min-height: 100vh;
   display: flex;
   align-items: center;
-  
+
   &::before {
     content: '';
     position: absolute;
@@ -34,7 +34,7 @@
     font-size: 90px;
     font-weight: 900;
     margin-bottom: 20px;
-    color: $white;
+    color: v.$white;
     text-transform: uppercase;
     line-height: 1.3;
     letter-spacing: 1px;
@@ -51,8 +51,8 @@
 
   @media (max-width: 768px) {
     padding: 60px 0;
-    min-height: auto; 
-    height: auto; 
+    min-height: auto;
+    height: auto;
     background-size: cover;
     background-attachment: scroll;
 
@@ -61,7 +61,7 @@
     }
 
     &__container {
-      max-height: none; 
+      max-height: none;
       margin-top: 80px;
     }
 
@@ -69,7 +69,7 @@
       font-size: 52px;
       margin-bottom: 30px;
     }
-    
+
     &__button-wrapper {
       margin-bottom: 60px;
     }

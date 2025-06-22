@@ -1,5 +1,6 @@
-import FlightBookingSection from "../FlightBookingSection";
-import RussianAccommodationInfo from "../RussianAccommodationInfo";
+import FlightBookingSection from "../FlightBookingSection/index.js";
+import RussianAccommodationInfo from "../RussianAccommodationInfo/index.js";
+import Moto from "../../../../assets/image/img/moto.jpg"
 import "./style.css";
 
 function TravelExperienceSection() {
@@ -8,7 +9,7 @@ function TravelExperienceSection() {
             <FlightBookingSection />
             <RussianAccommodationInfo />
             <div className="journey-info-container">
-                <img src="/assets/image_1694f9e3.png" className="travel-image-card-content" />
+                <img src={Moto} className="travel-image-card-content"  alt="run"/>
                 <div className="journey-description-container">
                     <p className="flight-heading">Передвижение по стране</p>
                     <p className="adventure-text-style">

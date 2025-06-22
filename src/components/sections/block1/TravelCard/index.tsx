@@ -1,7 +1,12 @@
-import React from 'react';
 import './TravelCard.scss';
 
-const TravelCard = ({ number, title, description }) => {
+type TravelCardProps = {
+    number: string;
+    title: string;
+    description: string;
+};
+
+const TravelCard = ({ number, title, description }: TravelCardProps) => {
   return (
     <div className="travel-card">
       <span className="travel-card__number">{number}</span>

@@ -1,7 +1,7 @@
-import { Button } from "@mui/base";
 import TravelExperienceSection from "../TravelExperienceSection";
-import PlanExperiences from "../PlanExperiences";
+import PlanExperiences from "../PlanExperiences/index.js";
 import "./style.css";
+import MainButton from "@/components/sections/block1/MainButton";
 
 function TravelExperienceDisplay() {
     return (
@@ -13,7 +13,7 @@ function TravelExperienceDisplay() {
                 </div>
             </div>
             <div className="content-wrapper">
-                <Button className="primary-button">Узнать больше</Button>
+                <MainButton text="Узнать больше"/>
             </div>
         </div>
     );

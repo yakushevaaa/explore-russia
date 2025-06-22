@@ -1,4 +1,3 @@
-import React from 'react';
 import TravelCard from '@/components/sections/block1/TravelCard';
 import MainButton from '@/components/sections/block1/MainButton';
 import './ExploreRussiaSection.scss';
@@ -28,7 +27,7 @@ const ExploreRussiaSection = () => {
         <h1 className="explore-russia__title">ИССЛЕДУЙТЕ РОССИЮ</h1>
         
         <div className="explore-russia__button-wrapper">
-          <MainButton>Начать путешествие</MainButton>
+          <MainButton text="Начать путешествие"/>
         </div>
         
         <div className="explore-russia__cards">
