@@ -1,12 +1,29 @@
 import React from "react";
 import "./Footer.scss";
+import footerIcon from "@/assets/image/icon/logo.svg";
 
 const Footer: React.FC = () => (
   <footer className="footer">
-    <div>© {new Date().getFullYear()} Explore Russia. Все права защищены.</div>
-    <div className="footer__links">
-      <a href="#privacy">Политика конфиденциальности</a>
-      <a href="#terms">Условия</a>
+    <div className="footer__container">
+      <a href="/" className="footer__logo">
+        <img src={footerIcon} alt="Explore Russia Logo" />
+      </a>
+      <nav className="footer__nav">
+        <a href="#about">О нас</a>
+        <a href="#pricing">Цена</a>
+        <a href="#company">Компания</a>
+        <a href="#blog">Блог</a>
+      </nav>
+      <div className="footer__meta">
+        <div className="footer__socials">
+          <a href="#">f</a>
+          <a href="#">in</a>
+          <a href="#">G</a>
+        </div>
+        <div className="footer__copyright">
+          Copyright © 2019
+        </div>
+      </div>
     </div>
   </footer>
 );
