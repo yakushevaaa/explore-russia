@@ -97,4 +97,4 @@ _[Ss]cripts
 *.ncrunchsolution
 *.dot[Cc]over
 .idea
-.DS_Store
+.DS_Store.vs/
